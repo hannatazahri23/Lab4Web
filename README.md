@@ -430,3 +430,157 @@ CSS-nya
 
 ### Hasilnya...
 ![img4-10](img/img4-10.JPG)
+
+# Pertanyaan dan Tugas
+
+## 1. Tambahkan layout untuk menu About
+HTML-nya
+```html
+<section class="cont-about">
+    <div class="bio">
+        <img src="img/pas-photo-square.jpg" alt="">
+        <div class="list desc1">
+            <h3>Name</h3>
+            <h3>Age</h3>
+            <h3>Date of Birth</h3>
+            <h3>Phone</h3>
+            <h3>Email</h3>
+            <h3>Skills</h3>
+            <h3>Address</h3>
+        </div>
+        <div class="list desc2">
+            <h3>M. Hannata Zahri</h3>
+            <h3>19 Years.</h3>
+            <h3>23th of August 2002.</h3>
+            <h3>081210941107.</h3>
+            <h3>hannatadjava23@gmail.com.</h3>
+            <h3>Web Design, Editing Photo, and Foreign Language </h3>
+            <h3>Pilar Sukatani St, Bekasi, West Java, Indonesia.</h3>
+        </div>
+    </div>
+</section>
+```
+
+CSS-nya
+```css
+.cont-about{
+    padding: 50px 0px;
+}
+.bio{
+    display: flex;
+    flex-direction: row;
+}
+.bio img{
+    margin: 20px;
+    border: 2px solid #1d1d1d;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1em gray;
+}
+.list{
+    position: relative;
+    top: 30px;
+    left: 15px;
+}
+.list h3{
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+.desc1{
+    width: 150px;
+}
+.desc2 h3{
+    font-weight: normal;
+}
+```
+
+### Hasilnya...
+![task-img1](img/tas-img1.JPG)
+
+## 2. Tambahkan layout untuk menu Kontak
+HTML-nya
+```html
+<section class="cont-kontak">
+    <h2>FIND ME..!!</h2>
+    <div class="hajimari">
+        <div class="kaado wa">
+            <div class="icon icon-wa">
+                <a href="#">
+                    <img src="img/whatsapp-icon.jpg" alt="">
+                </a>
+            </div>
+            <h3>Whats App</h3>
+        </div>
+        <div class="kaado fb">
+            <div class="icon icon-fb">
+                <a href="#">
+                    <img src="img/facebook-black-block.jpg"alt="">
+                </a>
+            </div>
+            <h3>Facebook</h3>
+        </div>
+        <div class="kaado ig">
+            <div class="icon icon-ig">
+                <a href="#">
+                    <img src="img/ig-logo-black.jpg" alt="">
+                </a>
+            </div>
+            <h3>Instagram</h3>
+        </div>
+        <div class="kaado tw">
+            <div class="icon icon-tw">
+                <a href="#">
+                    <img src="img/twitter_icon.jpg" alt="">
+                </a>
+            </div>
+            <h3>Twitter</h3>
+        </div>
+        <div class="kaado gh">
+            <div class="icon icon-gh">
+                <a href="#">
+                    <img src="img/github-logo.jpg" alt="">
+                </a>
+            </div>
+            <h3>Git Hub</h3>
+        </div>
+    </div>
+</section>
+```
+
+CSS-nya
+```css
+.cont-kontak{
+    margin: 100px 0px;
+}
+.cont-kontak h2{
+    margin-bottom: 50px;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 3px 3px #b5b5b5;
+}
+.hajimari{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kaado h3{
+    text-align: center;
+    margin-top: 15px;
+}
+.icon a img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: 0px 20px;
+    /* border: 5px solid green; */
+}
+.icon a img:hover{
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    box-shadow: -10px 10px #b5b5b5;
+}
+```
+
+### Hasilnya...
+![task-img2](img/tas-img2.JPG)
